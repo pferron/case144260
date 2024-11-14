@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["Arun Kumar <arun.kumar@impactanalytics.co>"]
+[tool.poetry.dependencies]
+python = "^3.12.1"
+fastapi = "^0.110.1"
+mtputils =  { git = "git@bitbucket.org:insideinsight/mtp-utils-backend.git", branch = "release/isv3-utils"  }
+uvicorn = "^0.29.0"
+firebase-admin = "^6.5.0"
+starlette-exporter = "^0.21.0"
+google-cloud-secret-manager = "^2.19.0"
+python-dotenv = "^1.0.1"
+py-linq = "^1.4.0"
+scikit-learn = "^1.4.2"
+gurobipy = "^11.0.1"
+polars-lts-cpu = "^0.20.31"
+duckdb = "^1.1.0"
+mtptrace =  {git = "git@bitbucket.org:insideinsight/mtp-trace-backend.git", branch = "main", extras=[]}
+[tool.poetry.group.dev.dependencies]
+setuptools = "^69.2.0"
